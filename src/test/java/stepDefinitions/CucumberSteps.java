@@ -52,16 +52,16 @@ public class CucumberSteps {
         String secondUrl = responseArray.getJSONObject(1).getString("url");
         String thirdUrl = responseArray.getJSONObject(2).getString("url");
 
-        assertTrue(firstUrl.startsWith("https://"),
-                "First URL should start with 'https://'");
-        assertTrue(secondUrl.startsWith("https://asia.creativecdn.com/ig-membership?"),
-                "Second URL should start with 'https://asia.creativecdn.com/ig-membership?'");
-        assertTrue(thirdUrl.startsWith("https://asia.creativecdn.com/topics-membership?"),
-                "Third URL should start with 'https://asia.creativecdn.com/topics-membership?'");
+//        assertTrue(firstUrl.startsWith("https://"),
+//                "First URL should start with 'https://'");
+//        assertTrue(secondUrl.startsWith("https://asia.creativecdn.com/ig-membership?"),
+//                "Second URL should start with 'https://asia.creativecdn.com/ig-membership?'");
+//        assertTrue(thirdUrl.startsWith("https://asia.creativecdn.com/topics-membership?"),
+//                "Third URL should start with 'https://asia.creativecdn.com/topics-membership?'");
 
-//        validateValuePrefix(firstUrl, "https://");
-//        validateValuePrefix(secondUrl, "https://asia.creativecdn.com/ig-membership?");
-//        validateValuePrefix(thirdUrl, "https://asia.creativecdn.com/topics-membership?");
+        validateValuePrefix(firstUrl, "https://");
+        validateValuePrefix(secondUrl, "https://asia.creativecdn.com/ig-membership?");
+        validateValuePrefix(thirdUrl, "https://asia.creativecdn.com/topics-membership?");
     }
 
     @When("I send a column page request for {string}")
