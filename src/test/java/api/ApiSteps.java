@@ -9,8 +9,6 @@ import static org.testng.Assert.*;  // the reason for static: call utilities wit
 import utils.ApiEndpoints;
 
 public class ApiSteps {
-//    private static final String BASE_URL = "https://asia.creativecdn.com";
-//    private static final String COLUMN_URL = "https://ecapi-cdn.pchome.com.tw/fsapi/cms/contents";
     private static final String ENDPOINT = "/tags/v2?type=json";
     private Response response;
     private static final String BASE_URL = ApiEndpoints.BASE_URL.getUrl();
