@@ -1,6 +1,6 @@
 Feature: RESTful Booker API Testing
 
-  @restfulbooker
+  @restfulbooker @API
   Scenario: Create and Update Booking
     Given I have an authentication token for "admin" and "password123"
     When I create a booking with firstname "Drew", lastname "Lin", totalprice 111, depositpaid "true", checkin "2025-03-08", checkout "2025-03-09", and additionalneeds "Breakfast"

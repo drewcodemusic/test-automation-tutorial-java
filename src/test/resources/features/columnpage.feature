@@ -1,6 +1,6 @@
 Feature: Column page features
 
-  @column
+  @column @API
   Scenario Outline: Verify column page content for different page IDs
     When I send a column page request for "<pageId>"
     Then I should receive a successful api response

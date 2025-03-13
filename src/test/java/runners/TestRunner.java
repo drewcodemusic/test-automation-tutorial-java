@@ -8,8 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepDefinitions"},
-        tags = "@restfulbooker",
-        plugin = {"pretty", "json:target/cucumber.json"}
+        tags = "@column",
+        plugin = {
+                "pretty",
+                "json:target/cucumber.json",
+                "html:target/cucumber-reports.html"
+        }
 )
 public class TestRunner {
 }
